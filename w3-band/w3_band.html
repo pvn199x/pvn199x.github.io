@@ -19,7 +19,7 @@
                 <li><a href="#band">Band</a></li>
                 <li><a href="#tour">Tour</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="#">
+                <li><a class="js-more" href="#">
                         More
                         <i class="ti-angle-down"></i>
                     </a>
@@ -32,7 +32,8 @@
                 </li>
             </ul>
             <i id="menu-mobile" class="mobile-menu ti-menu"></i>
-            <i class="search-icon ti-search"></i> 
+            <i class="search-icon ti-search"></i>
+             
         </div>
 
         <!-- SLIDER -->
@@ -79,7 +80,7 @@
                     <ul class="ticket-list">
                         <li><span class="ticket-time">September</span><span class="sold-out">Sold out</span></li>
                         <li><span class="ticket-time">October</span><span class="sold-out">Sold out</span</li>
-                        <li>November<span class="quantity">3</span></li>
+                        <li><span class="ticket-time">November</span><span class="quantity">3</span></li>
                     </ul>
 
                     <div class="row pad-topbot-32">
@@ -195,6 +196,18 @@
         var header = document.getElementById('header');
         var mobileMenu = document.getElementById('menu-mobile');
         var headerHigh = header.clientHeight;
+        // var more = document.querySelector('.js-more');
+        // var subnav = document.querySelector('.subnav');
+        // var subnavPosition = getComputedStyle(subnav).position;
+
+        // more.onclick = function() {
+        //     var isCloseSubnav = getComputedStyle(subnav).position == subnavPosition;
+        //     if (isCloseSubnav) {
+        //         subnav.style.position = 'initial';
+        //     } else {
+        //         subnav.style.position = null;
+        //     }
+        // }
         
         mobileMenu.onclick = function() {
             var isClose = header.clientHeight == headerHigh;

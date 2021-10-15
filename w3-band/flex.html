@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/flex.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+        <div class="cards">
+            <div class="card">
+                <img src="https://unity.com/sites/default/files/styles/cards_16_9/public/lastdayonearth-8_12-810x455%402x.jpg?itok=aVwfPgPJ" alt="">
+                <div class="card-content">
+                    <div class="card-top">
+                        <h2 class="card-title">Last Day on Earth</h2>
+                        <p class="card-publisher">Kefir</p>
+                        <div class="card-introduce">Soft-launched after just 62 days, it became a $125M success </div>
+                        <p class="card-description">This studio is no zombie when it comes to making shrewd game-design and UA decisions. They chose Unity because it was ideal for their agile gamedev environment. Now they have the most-popular survival game on mobile.</p>
+                    </div>
+                    <div class="card-bottom">
+                        <p class="down-load"><a href="">Download Last Day on Earth</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://unity.com/sites/default/files/styles/cards_16_9/public/2019-04/arena-of-valor_0.jpg?itok=y0v3XbHd" alt="">
+                <div class="card-content">
+                    <div class="card-top">
+                        <h2 class="card-title">Arena of Valor</h2>
+                        <p class="card-publisher">Tencent</p>
+                        <p class="card-introduce">How they created a MOBA phenomenon with Unity</p>
+                        <p class="card-description">One of gaming’s most-prolific publishers sustains its success by adapting their popular games for different platforms in vastly different regions. Find out how they get up to 10M daily active users (DAU).</p>
+                    </div>
+                    <div class="card-bottom">
+                        <p class="down-load"><a href="">Download Arena of Valor</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://unity.com/sites/default/files/styles/cards_16_9/public/card-royal_blood.jpg?itok=0Hl7FPJP" alt="">
+                <div class="card-content">
+                    <div class="card-top">
+                        <h2 class="card-title">Royal Blood</h2>
+                        <p class="card-publisher">Gameevil</p>
+                        <div class="card-introduce">How to bring AAA quality to mobile</div>
+                        <p class="card-description">Unity delivered everything Gamevil needed to bring AAA PC-quality to a mobile MMORPG. Find out how.</p>
+                    </div>
+                    <div class="card-bottom">
+                        <p class="down-load"><a href="">Download Royal Blood</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://unity.com/sites/default/files/styles/cards_16_9/public/card-eclipse.jpg?itok=lfWRyKyy" alt="">
+                <div class="card-content">
+                    <div class="card-top">
+                        <h2 class="card-title">Eclipse: Edge of Light</h2>
+                        <p class="card-publisher">White Elk Studios</p>
+                        <div class="card-introduce">A prototype within three months</div>
+                        <p class="card-description">Jonathan Hawkins created a prototype for a VR game within three months, which enabled him to get funding for Eclipse: Edge of Light. Find out how.</p>
+                    </div>
+                    <div class="card-bottom">
+                        <p class="down-load"><a href="">Download Eclipse: Edge of Light</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://unity.com/sites/default/files/styles/cards_16_9/public/lastdayonearth-8_12-810x455%402x.jpg?itok=aVwfPgPJ" alt="">
+                <div class="card-content">
+                    <div class="card-top">
+                        <h2 class="card-title">Last Day on Earth</h2>
+                        <p class="card-publisher">Kefir</p>
+                        <div class="card-introduce">Soft-launched after just 62 days, it became a $125M success </div>
+                        <p class="card-description">This studio is no zombie when it comes to making shrewd game-design and UA decisions. They chose Unity because it was ideal for their agile gamedev environment. Now they have the most-popular survival game on mobile.</p>
+                    </div>
+                    <div class="card-bottom">
+                        <p class="down-load"><a href="">Download Last Day on Earth</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <button onclick="showSuccessToast()" class="btn btn--success">
+                <i class="fas fa-check-circle"></i> Success
+            </button>
+            <button onclick="showInfooast()" class="btn btn--info">
+                <i class="fas fa-exclamation-circle"></i> Error
+            </button>
+            <button onclick="showErrorToast()" class="btn btn--error">
+                <i class="fas fa-times-circle"></i> Error
+            </button>
+            <button onclick="showWarningToast()" class="btn btn--warning">
+                <i class="fas fa-exclamation-triangle"></i> Warning
+            </button>
+        </div>
+
+        <div id="toast"></div>
+
+        <script>
+            function toast({
+                title = '',
+                message = '',
+                type = '',
+                icon = '',
+                duration = ''
+            }) {
+                const main = document.getElementById('toast');
+                if(main) {
+                    const toast = document.createElement('div');
+                    const timeRemoveId = 1000;
+                    // Auto remove toast
+                    const autoRemoveId = setTimeout(function () {
+                        main.removeChild(toast);
+                    }, duration + timeRemoveId);
+
+                    // Remove toast when clicked
+                    toast.onclick = function (e) {
+                        if (e.target.closest('.toast__close')) {
+                            main.removeChild(toast);
+                            clearTimeout(autoRemoveId);
+                        };
+                    };
+                    const icons = {
+                        success: "fas fa-check-circle",
+                        info: "fas fa-info-circle",
+                        warning: "fas fa-exclamation-circle",
+                        error: "fas fa-exclamation-circle"
+                    };
+                    const icon = icons[type];
+                    const delay = (duration / 1000).toFixed(2);
+                    toast.style.animation = `sideRightIn ease .4s, fadeOut linear 1s ${delay}s forwards`;
+                    toast.classList.add('toast', `toast--${type}`);
+                    toast.innerHTML = `
+                        <div class="toast__icon">
+                            <i class="${icon}"></i>
+                        </div>
+                        <div class="toast__content">
+                            <h3 class="toast__title">${title}</h3>
+                            <p class="toast__messsage">${message}</p>
+                        </div>
+                        <div class="toast__close">
+                            <i class="fas fa-times"></i>
+                        </div>`;
+                    main.appendChild(toast);
+                }
+            }
+
+            function showSuccessToast() {
+                toast({
+                title: 'Success',
+                message: 'Add success massage.',
+                type: 'success',
+                duration: 3000
+            })
+            }
+            function showInfooast() {
+                toast({
+                title: 'Info',
+                message: 'Add info massage.',
+                type: 'info',
+                duration: 3000
+            })
+            }
+            function showErrorToast() {
+                toast({
+                title: 'Error',
+                message: 'Add error massage.',
+                type: 'error',
+                duration: 3000
+            })
+            }
+            function showWarningToast() {
+                toast({
+                title: 'Warning',
+                message: 'Add warning massage.',
+                type: 'warning',
+                duration: 3000
+            })
+            }
+           
+        </script>   
+    
+</body>
+</html>
+
+<!-- 
+<div class="toast toast--error">
+    <div class="toast__icon">
+    <i class="fas fa-check"></i>
+    </div>
+    <div class="toast__body">
+        <h3 class="toast__title">Success</h3>
+        <p class="toast__message">Your changes have been successfully saved!</p>
+    </div>
+    <div class="toast__close">
+        <i class="fas fa-times"></i>
+    </div>
+</div> -->

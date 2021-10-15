@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/grid.css">
+    <title>Document</title>
+</head>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .main{
+            display: flex;
+            padding:0 32px;
+        }
+
+        .sidebar{
+            width: 250px;
+            background-color: orchid;
+        }
+
+        .product{
+            flex: 1;
+            background-color: #666;
+        }
+
+        .item{
+            height: 180px;
+            background-color: peru;
+            margin-top: 16px;
+        }
+
+        @media (max-width: 1023px) {
+            .hide-on-tablet-mobile{
+                display: none;
+            }
+        }
+
+        @media (max-width: 739px) {
+            .main{
+                padding: 0 12px;
+            }
+
+            .item{
+            margin-top: 12px;
+            }
+        }
+
+    </style>
+<body>
+    <div class="main">
+        <div class="sidebar hide-on-tablet-mobile">
+            <h2>Menu</h2>
+        </div>
+        <div class="product">
+            <h2>Produc info</h2>
+            <div class="grid">
+                <div class="row">
+                    <div class="col l-2-4 m-4 c-12">
+                        <div class="item">
+                            <p>item 2</p>
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-4 c-12">
+                        <div class="item">
+                            <p>item 3</p>
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-4 c-12">
+                        <div class="item">
+                            <p>item 4</p>
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-4 c-12">
+                        <div class="item">
+                            <p>item 5</p>
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-4 c-12">
+                        <div class="item">
+                            <p>item 6</p>
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-4 c-12">
+                        <div class="item">
+                            <p>item 7</p>
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-4 c-12">
+                        <div class="item">
+                            <p>item 8</p>
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-4 c-12">
+                        <div class="item">
+                            <p>item 9</p>
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-4 c-12">
+                        <div class="item">
+                            <p>item 10</p>
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-4 c-12">
+                        <div class="item">
+                            <p>item 11</p>
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-4 c-12">
+                        <div class="item">
+                            <p>item 12</p>
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-4 c-12">
+                        <div class="item">
+                            <p>item 13</p>
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-4 c-12">
+                        <div class="item">
+                            <p>item 14</p>
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-4 c-12">
+                        <div class="item">
+                            <p>item 15</p>
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-4 c-12">
+                        <div class="item">
+                            <p>item 16</p>
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-4 c-12">
+                        <div class="item">
+                            <p>item 17</p>
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-4 c-12">
+                        <div class="item">
+                            <p>item 18</p>
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-4 c-12">
+                        <div class="item">
+                            <p>item 19</p>
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-4 c-12">
+                        <div class="item">
+                            <p>item 20</p>
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-4 c-12">
+                        <div class="item">
+                            <p>item 21</p>
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-4 c-12">
+                        <div class="item">
+                            <p>item 22</p>
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-4 c-12">
+                        <div class="item">
+                            <p>item 23</p>
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-4 c-12">
+                        <div class="item">
+                            <p>item 24</p>
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-4 c-12">
+                        <div class="item">
+                            <p>item 25</p>
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-4 c-12">
+                        <div class="item">
+                            <p>item 26</p>
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-4 c-12">
+                        <div class="item">
+                            <p>item 27</p>
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-4 c-12">
+                        <div class="item">
+                            <p>item 28</p>
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-4 c-12">
+                        <div class="item">
+                            <p>item 29</p>
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-4 c-12">
+                        <div class="item">
+                            <p>item 30</p>
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-4 c-12">
+                        <div class="item">
+                            <p>item 31</p>
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-4 c-12">
+                        <div class="item">
+                            <p>item 32</p>
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-4 c-12">
+                        <div class="item">
+                            <p>item 33</p>
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-4 c-12">
+                        <div class="item">
+                            <p>item 34</p>
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-4 c-12">
+                        <div class="item">
+                            <p>item 35</p>
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-4 c-12">
+                        <div class="item">
+                            <p>item 36</p>
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-4 c-12">
+                        <div class="item">
+                            <p>item 37</p>
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-4 c-12">
+                        <div class="item">
+                            <p>item 38</p>
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-4 c-12">
+                        <div class="item">
+                            <p>item 39</p>
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-4 c-12">
+                        <div class="item">
+                            <p>item 40</p>
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-4 c-12">
+                        <div class="item">
+                            <p>item 41</p>
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-4 c-12">
+                        <div class="item">
+                            <p>item 42</p>
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-4 c-12">
+                        <div class="item">
+                            <p>item 43</p>
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-4 c-12">
+                        <div class="item">
+                            <p>item 44</p>
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-4 c-12">
+                        <div class="item">
+                            <p>item 45</p>
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-4 c-12">
+                        <div class="item">
+                            <p>item 46</p>
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-4 c-12">
+                        <div class="item">
+                            <p>item 47</p>
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-4 c-12">
+                        <div class="item">
+                            <p>item 48</p>
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-4 c-12">
+                        <div class="item">
+                            <p>item 49</p>
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-4 c-12">
+                        <div class="item">
+                            <p>item 50</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

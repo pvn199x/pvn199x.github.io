@@ -12,7 +12,6 @@
     --header-sort-bar-height:46px;
 }
 
-
 @keyframes fadeIn{
     from{
         opacity: 0;
@@ -232,5 +231,6 @@ html{
 .panination__icon{
 
 }
+
 
 

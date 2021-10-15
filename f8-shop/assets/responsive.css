@@ -163,4 +163,15 @@
         padding: 24px 8px;
     }
 
+    .footer__bottom,
+    .footer__item,
+    .footer__heading{
+        text-align: center;
+    }
+
+    .footer__download-link {
+        justify-content: center;
+        transform: translateX(28px);
+    }
+
 }

@@ -713,6 +713,7 @@
     background-color: var(--white-color);
     border-radius: 10px;
     border: 2px solid #F6402E;
+    user-select: none;
 }
 
 .header__cart-list{
@@ -1305,8 +1306,8 @@ i.home-product-body__rating-like-icon--fill{
 }
 
 .footer__wrap{
-    padding-top: 48px;
-    padding-bottom: 24px;
+    padding-top: 38px;
+    padding-bottom: 14px;
 }
 
 .footer__heading{
@@ -1368,7 +1369,8 @@ i.home-product-body__rating-like-icon--fill{
 }
 
 .footer_bottom-copyright{
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     color: #0000008a;
-    margin-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 18px;
 }

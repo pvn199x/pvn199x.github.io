@@ -1,0 +1,121 @@
+@media screen and (max-width: 1023px) {
+    .show-on-tablet-mobile{
+        display: block;
+    }
+
+    .header__top{
+        height: 50px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .header__menu-mobile{
+        display: block;
+    }
+
+    .header__top-mail{
+        display: none;
+    }
+
+    .header__top-search input{
+        display: none;
+    }
+
+    .header__top-search a{
+        font-size: 2rem;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        background-color: var(--header-footer-color);
+    }
+
+    .header__middle{
+        display: none;
+    }
+
+    .header__bottom{
+        position: absolute;
+        left: 0px;
+        top: 50px;
+        display: none;
+        z-index: 1;
+    }
+
+    .navbar a{
+        display: block;
+        padding-left: 16px;
+        padding-right: 16px;
+        max-width: 130px;
+    }
+    
+    .section-contact-wrap{
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .product-wrap {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .product__item{
+        width: 100%;
+    }
+
+    .product__item:nth-last-child(2){
+        border-bottom: 1px solid #E3E3E3;
+    }
+
+    .product__info{
+        flex: 1;
+    }
+
+    .footer__main,
+    .footer__sub-post{
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .footer__post{
+        width: calc(50% - 30px);
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .hide-on-mobile{
+        display: none;
+    }
+
+    .header__bottom{
+        position: unset;
+    }
+
+    .slider{
+        height: 180px;
+    }
+
+    .product-wrap,
+    .footer__main,
+    .footer__sub-post{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .product__item{
+        flex-direction: column;
+        margin-right: 0;
+    }
+
+    .product__data{
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .footer__post,
+    .footer__sub-socials{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 30px;    
+    }
+
+}
